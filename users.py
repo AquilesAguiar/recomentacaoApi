@@ -1,7 +1,4 @@
-
-import firebase_admin
-from firebase_admin import credentials
-from firebase_admin import firestore
+from firebase_admin import credentials,firestore
 
 cred = credentials.Certificate("find-her-65a18-352600-firebase-adminsdk-1wb20-f8d77f7bbd.json")
 firebase_admin.initialize_app(cred)
