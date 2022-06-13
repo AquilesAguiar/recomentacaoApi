@@ -3,6 +3,10 @@ from users import *
 from recomendacao import getSimilares
 app = Flask(__name__)
 
+@app.route('/', methods=['GET'])
+def index():
+    return {"version": 1.0}
+
 @app.route('/similar', methods=['POST'])
 def similar():
     user = request.json()["id"]
